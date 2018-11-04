@@ -1,0 +1,19 @@
+.column {
+    width: 33.33%;
+    display: inline-block;
+}
+.custom_view {
+    display: inline-block;
+}
+.custom_view--number{
+    width: 30%
+}
+.custom_view--letter{
+    width: 50%;
+    margin-inline-start: 20px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
