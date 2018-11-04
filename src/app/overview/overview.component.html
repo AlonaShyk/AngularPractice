@@ -1,14 +1,16 @@
 <div class="row">
-  <div class="column"></div>
-  <div class="column">
-    <p>"Lieferschein number"</p>
-    <mat-form-field class="custom_view custom_view--number">
+  <div class="side"></div>
+  <div class="center">
+    <p class="text">"Lieferschein number"</p>
+    <div class="custom_view">
+    <mat-form-field class=" custom_view--number">
       <mat-select [(value)]="selectedData" (selectionChange)= onChange()>
         <mat-option *ngFor="let number of data" [value]="number">{{number}}</mat-option>
       </mat-select>
     </mat-form-field>
     <span flex></span>
-    <p class="custom_view custom_view--letter">m3</p>
+    <p class=" custom_view--letter">m3</p>
   </div>
-  <div class="column"></div>
+  </div>
+  <div class="side"></div>
 </div>
